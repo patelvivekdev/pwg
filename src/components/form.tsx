@@ -17,6 +17,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import CopyButton from "./Copy";
 
 export default function GenerateForm() {
   return (
@@ -75,18 +76,11 @@ export default function GenerateForm() {
         <p className="text-lg font-medium text-gray-100 dark:text-gray-100">
           Your generated password:
         </p>
-        <div className="mt-2 flex items-center justify-center">
+        <div className="mt-2 gap-2 flex flex-row items-center justify-center">
           <p className="text-2xl font-bold tracking-tight text-gray-100 dark:text-gray-100">
             Xt8#2Ks9Lm!
           </p>
-          {/* <Button
-              className="ml-2 text-black hover:text-black dark:text-black dark:hover:text-black"
-              size="icon"
-              variant="ghost"
-            >
-              <CopyIcon className="h-5 w-5" />
-              <span className="sr-only">Copy to clipboard</span>
-            </Button> */}
+          <CopyButton>Xt8#2Ks9Lm!</CopyButton>
         </div>
       </div>
     </div>
